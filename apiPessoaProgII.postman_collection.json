@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "a0109322-9632-4db1-9fdb-1e8478ed00aa",
+		"name": "apiPessoaProgII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18920858"
+	},
+	"item": [
+		{
+			"name": "GetTodasPessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostPessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"mateus\",\r\n    \"sobrenome\": \"eidt\",\r\n    \"cpf\": \"111.111.111-11\",\r\n    \"rg\": \"111.111.111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPessoaPeloId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizaPessoaPorId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"sadas\",\r\n    \"sobrenome\": \"dasd\",\r\n    \"cpf\": \"111.111.111-11\",\r\n    \"rg\": \"111.111.111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletaPessoaPorId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
